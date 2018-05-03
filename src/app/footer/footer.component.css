@@ -1,0 +1,9 @@
+.footer{
+    height: 100px;
+    background: #444 url(../img/f-bg.jpg) repeat;
+}
+p{
+    color: aliceblue;
+    padding-top: 45px;
+    text-align: center;
+}

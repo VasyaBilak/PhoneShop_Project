@@ -1,0 +1,30 @@
+.item-card {
+    max-width: 200px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .mat-fab{
+    margin-left: 10%;
+  }
+  .mat-raised-button{
+    color: greenyellow;
+    background: firebrick;
+    font-weight: 700;
+  }
+  .mat-fab:hover{
+     background-color: green;
+  }
+  .mat-raised-button:hover{
+    background-color: blueviolet;
+  }
+  .mat-card-image{
+    width: 100%;
+    height: 200px;
+  }
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+

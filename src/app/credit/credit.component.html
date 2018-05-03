@@ -1,0 +1,39 @@
+<h1>Умови кредиту</h1>
+<div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <mat-header-cell *matHeaderCellDef class="title"> Найменування кредитного пакету </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef class="title"> Пільговий період 
+        без комісій, міс </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.annual}} </mat-cell>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="weight">
+      <mat-header-cell *matHeaderCellDef class="title"> Річна ставка, % </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.period}} </mat-cell>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="symbol" >
+      <mat-header-cell *matHeaderCellDef  class="title">Щомісячна комісія після 
+        пільгового періоду, 
+        % від суми кредиту</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.commission}} </mat-cell>
+    </ng-container>
+
+    
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

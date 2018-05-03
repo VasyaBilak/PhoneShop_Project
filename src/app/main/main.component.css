@@ -1,0 +1,19 @@
+div {
+	height: 100%;
+	font: 13px/16px Arial, Tahoma, sans-serif;
+	color: #000;
+	background: #fff url(../img/bg.jpg) repeat;
+	display: -webkit-flex;	
+	display: -moz-flex;	
+	display: -o-flex;	
+	display: -ms-flex;	
+	display: flex;	
+	flex-direction: column;
+	min-height: 100vh;
+}
+app-header app-footer{
+	flex: 0;
+}
+app-nav{
+	flex: 1;
+}

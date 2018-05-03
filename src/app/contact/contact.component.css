@@ -1,0 +1,10 @@
+.contact{
+    margin-left: 20%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+iframe{
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
